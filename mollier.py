@@ -42,14 +42,13 @@ def plot_psychrometric_chart():
             text=[f'{int(rh)}%'],
             textposition='top center'
         ))
-
     fig.update_layout(
         title='Psychrometric Chart',
         xaxis_title='Temperature (°C)',
         yaxis_title='Absolute Humidity (g/m³)',
         xaxis=dict(range=[-10, 35], dtick=2.5, showgrid=True, gridwidth=1, gridcolor='LightGray'),
-        yaxis=dict(range=[0, 30], dtick=2.5, showgrid=True, gridwidth=1, gridcolor='LightGray'),
-        legend_title='Relative Humidity'
+        yaxis=dict(range=[0, 20], dtick=2.5, showgrid=True, gridwidth=1, gridcolor='LightGray'),
+        showlegend=False
     )
 
     return fig
