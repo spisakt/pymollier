@@ -25,10 +25,8 @@ jobs:
       - name: Generate Mollier diagram
         run: python mollier.py
 
-      - name: Commit changes
-        run: |
-          git config --local user.name "GitHub Action"
-          git config --local user.email "action@github.com"
-          git add mollier_diagram.html
-          git commit -m "Update Mollier diagram with latest weather data"
-          git push
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./  # Directory to publish
