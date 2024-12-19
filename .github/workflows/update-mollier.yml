@@ -3,6 +3,9 @@ name: Update Mollier Diagram
 on:
   schedule:
     - cron: '0 * * * *'  # Runs every hour
+  push:
+    branches:
+      - main
 
 jobs:
   update-diagram:
