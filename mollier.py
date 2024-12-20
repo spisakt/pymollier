@@ -169,7 +169,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[17],
+        y=[16],
         mode='text',
         text=[f'Location: {location}, {country}'],
         textposition='top right',
@@ -177,7 +177,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))  
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[16],
+        y=[15.2],
         mode='text',
         text=[f'Sunrise: {sunrise}'],
         textposition='top right',
@@ -185,7 +185,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[15.2],
+        y=[14.4],
         mode='text',
         text=[f'Sunset: {sunset}'],
         textposition='top right',
@@ -193,7 +193,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[14.4],
+        y=[13.6],
         mode='text',
         text=[f'Last Updated: {current_time}'],
         textposition='top right',
