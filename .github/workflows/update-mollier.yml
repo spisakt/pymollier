@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate Mollier diagram
-        run: python mollier.py
+        run: python mollier.py ${{ secrets.OW_APIKEY }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
