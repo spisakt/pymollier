@@ -153,7 +153,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[18.4],
+        y=[18],
         mode='text',
         text=[f'Target: {target_temperature}°C, {int(calculate_relative_humidity(target_temperature, absolute_humidity))}% RH'],
         textposition='top right',
@@ -161,7 +161,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[17.8],
+        y=[17],
         mode='text',
         text=[f'Dew Point: {np.round(dew_point, 1)}°C'],
         textposition='top right',
@@ -177,7 +177,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))  
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[16.5],
+        y=[16],
         mode='text',
         text=[f'Sunrise: {sunrise}'],
         textposition='top right',
@@ -185,7 +185,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[16],
+        y=[15.2],
         mode='text',
         text=[f'Sunset: {sunset}'],
         textposition='top right',
@@ -193,7 +193,7 @@ def plot_actual_values(fig, data, target_temperature, current_time):
     ))
     fig.add_trace(go.Scatter(
         x=[-9],
-        y=[15.5],
+        y=[14.4],
         mode='text',
         text=[f'Last Updated: {current_time}'],
         textposition='top right',
