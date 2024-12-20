@@ -1,9 +1,11 @@
 import requests
 import plotly.graph_objects as go
 import numpy as np
+import sys
 
 def fetch_weather_data():
-    response = requests.get('https://api.openweathermap.org/data/2.5/weather?lat=51.387974063631475&lon=7.01352462559009&units=metric&appid=69d00bc31269bd663b0a4579f9f4cb4c')
+    api_key = sys.argv[1] # command line argument
+    response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?lat=51.387974063631475&lon=7.01352462559009&units=metric&appid={api_key}')
     data = response.json()
 
     print(data)
