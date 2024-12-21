@@ -92,7 +92,7 @@ def calculate_relative_humidity(T, AH):
     saturation_vapor_pressure = 6.112 * np.exp((a * T) / (b + T))
     
     # Calculate the actual vapor pressure
-    actual_vapor_pressure = (AH * 0.622) / (0.622 + (1 - 0.622))
+    actual_vapor_pressure = AH / 2.1674
     
     # Calculate the relative humidity
     RH = (actual_vapor_pressure / saturation_vapor_pressure) * 100
